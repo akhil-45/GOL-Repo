@@ -75,17 +75,17 @@ stages {
  }
   stage('Apply Kubernetes files') {
             steps {
-             sh label: '', script: '''sudo scp *.yml jenkins@172.31.46.151:/home/jenkins
-                                  sudo ssh jenkins@172.31.46.151 kubectl apply -f deploy-kube.yml
-                                  sudo ssh jenkins@172.31.46.151 kubectl apply -f service.yml'''
+             sh label: '', script: '''scp *.yml jenkins@172.31.46.151:/home/jenkins
+                                  ssh jenkins@172.31.46.151 kubectl apply -f deploy-kube.yml
+                                  ssh jenkins@172.31.46.151 kubectl apply -f service.yml'''
            
         }
      }
 /* stage('Deploy to Kubernetes') {
          steps {
          withKubeConfig([credentialsId: 'jenkins-kube']) {
-         sh 'sudo kubectl config set-context $(kubectl config current-context) --namespace=default'
-         sh 'sudo kubectl apply -f GOL-Deploy.yml'
+         sh 'kubectl config set-context $(kubectl config current-context) --namespace=default'
+         sh 'kubectl apply -f GOL-Deploy.yml'
         }
         }
      }*/

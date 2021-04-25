@@ -1,5 +1,5 @@
 FROM tomcat
-MAINTAINER sankar
+MAINTAINER akhil
 ARG CONT_IMG_VER
 WORKDIR /usr/local/tomcat
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml

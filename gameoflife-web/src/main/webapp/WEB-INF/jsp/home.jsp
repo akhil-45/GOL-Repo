@@ -8,7 +8,7 @@
     <!--  TODO: Don't inline this -->
     <style type="text/css">
         h2 {
-            color: red;
+            color: green;
             font-family: sans-serif;
         }
 
@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-<h2>Welcome to Canarys-Akhil-Micro's Game Of Life!</h2>
+<h2>Welcome to Canarys-Akhil-ACI Game Of Life!</h2>
 
 <div class="intro">
     <p>This is a really cool web version of Conway's famous Game Of
